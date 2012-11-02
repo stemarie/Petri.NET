@@ -39,7 +39,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="IArc.cs" />
+    <Compile Include="Base.cs" />
+    <Compile Include="Collector.cs" />
+    <Compile Include="Emitor.cs" />
+    <Compile Include="IItem.cs" />
+    <Compile Include="INameable.cs" />
+    <Compile Include="InArc.cs" />
+    <Compile Include="Network.cs" />
+    <Compile Include="OutArc.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="Sequence.cs" />
+    <Compile Include="Place.cs" />
+    <Compile Include="Decision.cs" />
+    <Compile Include="Process.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

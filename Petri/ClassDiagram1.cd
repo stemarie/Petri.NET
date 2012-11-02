@@ -1,85 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Petri.Place">
-    <Position X="1.75" Y="2.25" Width="1.5" />
-    <InheritanceLine Type="Petri.Base" FixedFromPoint="true">
-      <Path>
-        <Point X="3.25" Y="1" />
-        <Point X="2.625" Y="1" />
-        <Point X="2.625" Y="2.25" />
-      </Path>
-    </InheritanceLine>
+  <Class Name="Petri.Place" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
-      <FileName>Class1.cs</FileName>
+      <HashCode>AgAAAAAAAAACAAQAIAAAAAQAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Place.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Tokens" />
-    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Petri.Transition" Collapsed="true">
+  <Class Name="Petri.Process" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="1.5" />
-    <InheritanceLine Type="Petri.Base" FixedFromPoint="true">
-      <Path>
-        <Point X="3.25" Y="1" />
-        <Point X="2" Y="1" />
-      </Path>
-    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Class1.cs</FileName>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAQAAiAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Process.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Petri.Decision" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAQAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decision.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Petri.Role" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQCAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Role.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Petri.Emitor" Collapsed="true">
+    <Position X="3.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Emitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Petri.Collector" Collapsed="true">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Collector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Petri.InArc" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAQCACAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>InArc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Petri.OutArc" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQCACAAAAAEAAAAAAAAgAA=</HashCode>
+      <FileName>OutArc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Petri.Engine" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAEAAAAAAABYQCAAABAQAAAAAAAAECAAAAABQIAA=</HashCode>
+      <FileName>Engine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Petri.Network" Collapsed="true">
+    <Position X="3.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAIABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Network.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Petri.Token" Collapsed="true">
-    <Position X="1.75" Y="4.25" Width="1.5" />
+  <Struct Name="System.Int32" Collapsed="true">
+    <Position X="10.75" Y="1" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Struct>
+  <Interface Name="Petri.IArc" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
-      <FileName>Class1.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IArc.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="Petri.Arc">
-    <Position X="4.75" Y="2" Width="1.5" />
-    <AssociationLine Name="Destination" Type="Petri.Base" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="6" Y="2" />
-        <Point X="6.104" Y="2" />
-        <Point X="6.104" Y="0.125" />
-        <Point X="4.125" Y="0.125" />
-        <Point X="4.125" Y="0.75" />
-      </Path>
-    </AssociationLine>
-    <AssociationLine Name="Source" Type="Petri.Base" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="5.312" Y="2" />
-        <Point X="5.312" Y="1" />
-        <Point X="4.75" Y="1" />
-      </Path>
-    </AssociationLine>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAgAAAAAAAAAAAAACAAAAAAAEAAAAAAAAAAA=</HashCode>
-      <FileName>Class1.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Destination" />
-      <Property Name="Source" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="Petri.Base" Collapsed="true">
-    <Position X="3.25" Y="0.75" Width="1.5" />
-    <AssociationLine Name="Arcs" Type="Petri.Arc" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="4" Y="1.312" />
-        <Point X="4" Y="2.5" />
-        <Point X="4.75" Y="2.5" />
-      </Path>
-    </AssociationLine>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
-      <FileName>Class1.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Arcs" />
-    </ShowAsCollectionAssociation>
-  </Class>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
